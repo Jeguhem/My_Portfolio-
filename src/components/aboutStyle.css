@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.body {
+  color: #fff;
+  background-color: #081b29;
+}
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+}
+.sub-title span {
+  color: #0ef;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding: 15px 20px;
+  margin-left: 120px;
+}
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+.bar {
+  font-size: 23px;
+}
+.Technical-bars .bar {
+  margin: 10px 0;
+}
+.Technical-bars .bar:first-child {
+  margin-top: 20px;
+}
+
+.Technical-bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5 1s linear forwards;
+  opacity: 0;
+}
+.bar .progress-line {
+  height: 5px;
+  background-color: #121313;
+  border: transparent;
+  border-radius: 15px;
+  width: 100%;
+
+  overflow: hidden;
+  animation: first-progress-animation 0.5s forwards;
+  position: relative;
+}
+@keyframes first-progress-animation {
+  0% {
+    left: 0%;
+    width: 0;
+  }
+  100% {
+    left: 0;
+    width: 100;
+  }
+}
+
+.bar .progress-line span {
+  display: block;
+  height: 100%;
+  background-color: rgba(41, 204, 198);
+  position: absolute;
+  left: -100%;
+  animation: progress-animation 2s forwards;
+}
+
+@keyframes progress-animation {
+  0% {
+    left: -100%;
+    width: 0;
+  }
+  100% {
+    left: 0;
+    width: 100;
+  }
+}
+
+.bar .progressline span::before {
+  content: "";
+  display: block;
+  height: 100%;
+}

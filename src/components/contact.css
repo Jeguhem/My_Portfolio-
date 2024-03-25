@@ -1,0 +1,10 @@
+.word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+}
+
+.opaque .word {
+  opacity: 1;
+}
