@@ -36,6 +36,12 @@ h2 {
   border-right: 1px white;
   height: 100%;
 }
+.nlr {
+  background-color: #002d4c;
+
+  border-bottom: 1px;
+  padding: 10px 15px;
+}
 .fixednav {
   position: fixed;
   z-index: 1;
